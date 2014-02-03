@@ -20,21 +20,23 @@ public class Secciones extends Activity {
 		String urlImagen = getIntent().getStringExtra("urlImagen");
 		System.out.println(urlImagen+"2");
 		
-		String image_url = "http://elcondensadordefluzo.blogs.fotogramas.es/files/2013/01/Dark-Knight-Shooting-Joker-Severed-Head-Card-Illuminati.jpg";
+		//String image_url = "http://promoandroid.com/usuarios/kavier/imagenes/imagen.png";
 		ImageView image = (ImageView) findViewById(R.id.imgSecciones);
-		                        // Get singletone instance of ImageLoader
-		            ImageLoader imageLoader = ImageLoader.getInstance();
-		            // Initialize ImageLoader with configuration. Do it once.
-		            imageLoader.init(ImageLoaderConfiguration.createDefault(this));
-		            // Load and display image asynchronously
+		
+		// Get singletone instance of ImageLoader
+		ImageLoader imageLoader = ImageLoader.getInstance();
+		// Initialize ImageLoader with configuration. Do it once.
+		imageLoader.init(ImageLoaderConfiguration.createDefault(this));
+		// Load and display image asynchronously
 		 
-		            DisplayImageOptions options = new DisplayImageOptions.Builder()
-/*		                        .showStubImage(R.drawable.ic_launcher) //this is the image that will be displayed if download fails
-		            .cacheInMemory()
-		            .cacheOnDisc()*/
-		            .build();
+		 DisplayImageOptions options = new DisplayImageOptions.Builder()
+		 .delayBeforeLoading(0)
+		 /*.cacheInMemory(true)
+         .cacheOnDisc(true)*/
+		 .build();
 		 
-		            imageLoader.displayImage(image_url, image, options);
+		 
+		imageLoader.displayImage(urlImagen, image, options);
 	}
 	
 

@@ -8,7 +8,7 @@ import com.subirtupagina.diversioneskavier.utils.AsyncConector;
 
 public class ProyectoSimioApplication extends Application {
 	//Url del archivo XML
-	private final static String URL = "http://braingeek.net/test.xml";
+	private final static String URL = "http://promoandroid.com/kavier.xml";
 
 	public void updatePublicaciones(ArrayAdapter<Publicacion> lvAdapter) {
 
