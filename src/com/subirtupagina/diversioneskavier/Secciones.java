@@ -37,8 +37,8 @@ public class Secciones extends Activity {
 		 
 		 DisplayImageOptions options = new DisplayImageOptions.Builder()
 		 .delayBeforeLoading(0)
-		 /*.cacheInMemory(true)
-         .cacheOnDisc(true)*/
+		 .cacheInMemory(true)
+         .cacheOnDisc(true)
 		 .build();
 		 
 		 

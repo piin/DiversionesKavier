@@ -1,13 +1,18 @@
 package com.subirtupagina.diversioneskavier;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo.State;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
 import com.proyectosimio.proyectosimio.R;
@@ -25,7 +30,15 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		 requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);	
 		setContentView(R.layout.activity_main);
-	
+	   
+		ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		State internet_movil = conMan.getNetworkInfo(0).getState();//para 3G
+       	State wifi = conMan.getNetworkInfo(1).getState();//para WI-FI*/
+       	
+
+		
+       	
+       
 		
 		lvAdapter = new AdapterLVMain(this);
 		lvPublicaciones = (ListView) findViewById(R.id.lvPublicaciones);
@@ -36,12 +49,19 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		
 		
 		
-
 		
+       	
+       	if( wifi == android.net.NetworkInfo.State.CONNECTED || internet_movil == android.net.NetworkInfo.State.CONNECTED){
+       		
+			
 		
 		((ProyectoSimioApplication) getApplication())
 				.updatePublicaciones(lvAdapter);
-
+       	}else {
+       		Toast toast1 = Toast.makeText(getApplicationContext(), "No tienes acceso a Internet", Toast.LENGTH_LONG);
+       	 
+       	        toast1.show();
+		}
 	}
 
 	@Override
