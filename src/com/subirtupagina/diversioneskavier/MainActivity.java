@@ -45,21 +45,12 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		lvPublicaciones.setAdapter(lvAdapter);
 		lvPublicaciones.setOnItemClickListener(this);
 		
-		
-		
-		
-		
-		
        	
-       	if( wifi == android.net.NetworkInfo.State.CONNECTED || internet_movil == android.net.NetworkInfo.State.CONNECTED){
-       		
-			
-		
+       	if( wifi == android.net.NetworkInfo.State.CONNECTED || internet_movil == android.net.NetworkInfo.State.CONNECTED){      		
 		((ProyectoSimioApplication) getApplication())
 				.updatePublicaciones(lvAdapter);
        	}else {
-       		Toast toast1 = Toast.makeText(getApplicationContext(), "No tienes acceso a Internet", Toast.LENGTH_LONG);
-       	 
+       		Toast toast1 = Toast.makeText(getApplicationContext(), "No tienes acceso a Internet", Toast.LENGTH_LONG); 
        	        toast1.show();
 		}
 	}
