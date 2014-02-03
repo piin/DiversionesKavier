@@ -1,1 +1,4 @@
-#
+# archivos compilados
+*.apk
+*.jar
+
