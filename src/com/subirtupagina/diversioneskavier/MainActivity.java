@@ -27,34 +27,20 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// delete bar title
-		 requestWindowFeature(Window.FEATURE_NO_TITLE);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);	
 		setContentView(R.layout.activity_main);
-	   
+	    //obtiene el estado de red
 		ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
-
 		NetworkInfo netInfo = cm.getActiveNetworkInfo();
 
-	
-		
-		
-		
-		
-		
-		
-		
-       	
-
-		
-       	
-       
 		
 		lvAdapter = new AdapterLVMain(this);
 		lvPublicaciones = (ListView) findViewById(R.id.lvPublicaciones);
 		lvPublicaciones.setAdapter(lvAdapter);
 		lvPublicaciones.setOnItemClickListener(this);
 		
-       	
+       	//prueba de conexion a internet
        	if( netInfo != null && netInfo.isConnectedOrConnecting()){      		
 		((ProyectoSimioApplication) getApplication())
 				.updatePublicaciones(lvAdapter);
@@ -69,10 +55,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 			long id) {
 		// Recuperamos el link de la publicación seleccionada.
 		String link = lvAdapter.getItem(position).getLink();				
-		//System.out.println(link);
-		
-		
-		
+		//Inicia segundo activity
 		Intent i = new Intent(this,Secciones.class);
 		i.putExtra("urlImagen", link);
 		startActivity(i);

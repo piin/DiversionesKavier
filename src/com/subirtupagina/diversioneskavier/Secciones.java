@@ -41,8 +41,10 @@ public class Secciones extends Activity {
          .cacheOnDisc(true)
 		 .build();
 		 
-		 
+		 //Carga imagen de url a ImageView
 		imageLoader.displayImage(urlImagen, image, options);
+		//Limpia memoria cache del disco
+		imageLoader.clearDiscCache();
 	}
 	  @Override 
 	  public void onConfigurationChanged(Configuration newConfig) { 
