@@ -30,25 +30,31 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);	
 		setContentView(R.layout.activity_main);
-	    //obtiene el estado de red
-		ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
-		NetworkInfo netInfo = cm.getActiveNetworkInfo();
-
-		
+	
 		lvAdapter = new AdapterLVMain(this);
 		lvPublicaciones = (ListView) findViewById(R.id.lvPublicaciones);
 		lvPublicaciones.setAdapter(lvAdapter);
 		lvPublicaciones.setOnItemClickListener(this);
 		
        	//prueba de conexion a internet
-       	if( netInfo != null && netInfo.isConnectedOrConnecting()){      		
-		((ProyectoSimioApplication) getApplication())
-				.updatePublicaciones(lvAdapter);
-       	}else {
-       		Toast toast1 = Toast.makeText(getApplicationContext(), "No tienes acceso a Internet", Toast.LENGTH_LONG); 
-       	        toast1.show();
-		}
+		pruebaInternet();
 	}
+
+	private void pruebaInternet() {
+	
+		ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo netInfo = cm.getActiveNetworkInfo();
+		if( netInfo != null && netInfo.isConnectedOrConnecting()){      		
+			((ProyectoSimioApplication) getApplication())
+					.updatePublicaciones(lvAdapter);
+	       	}else {
+	       		Toast toast1 = Toast.makeText(getApplicationContext(), "No tienes acceso a Internet", Toast.LENGTH_LONG); 
+	       	        toast1.show();
+			}
+		
+	}
+	
+	
 
 	@Override
 	public void onItemClick(AdapterView<?> adapter, View view, int position,
