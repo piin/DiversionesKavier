@@ -6,6 +6,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.proyectosimio.proyectosimio.R;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -38,6 +39,10 @@ public class Secciones extends Activity {
 		 
 		imageLoader.displayImage(urlImagen, image, options);
 	}
+	  @Override 
+	  public void onConfigurationChanged(Configuration newConfig) { 
+	      super.onConfigurationChanged(newConfig); 
+	  } 
 	
 
 }
