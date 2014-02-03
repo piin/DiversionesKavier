@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo.State;
+import android.net.NetworkInfo;
 
 import android.os.Bundle;
 import android.view.View;
@@ -31,9 +31,18 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		super.onCreate(savedInstanceState);	
 		setContentView(R.layout.activity_main);
 	   
-		ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		State internet_movil = conMan.getNetworkInfo(0).getState();//para 3G
-       	State wifi = conMan.getNetworkInfo(1).getState();//para WI-FI*/
+		ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+		NetworkInfo netInfo = cm.getActiveNetworkInfo();
+
+	
+		
+		
+		
+		
+		
+		
+		
        	
 
 		
@@ -46,7 +55,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		lvPublicaciones.setOnItemClickListener(this);
 		
        	
-       	if( wifi == android.net.NetworkInfo.State.CONNECTED || internet_movil == android.net.NetworkInfo.State.CONNECTED){      		
+       	if( netInfo != null && netInfo.isConnectedOrConnecting()){      		
 		((ProyectoSimioApplication) getApplication())
 				.updatePublicaciones(lvAdapter);
        	}else {
