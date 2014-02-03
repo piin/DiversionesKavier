@@ -6,7 +6,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.proyectosimio.proyectosimio.R;
 
 import android.app.Activity;
-import android.content.pm.ActivityInfo;
+
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Window;
@@ -16,7 +16,7 @@ public class Secciones extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		//setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		// delete bar title
 		 requestWindowFeature(Window.FEATURE_NO_TITLE);
 		// TODO Auto-generated method stub
