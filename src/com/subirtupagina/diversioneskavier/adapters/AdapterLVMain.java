@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.proyectosimio.proyectosimio.R;
 import com.subirtupagina.diversioneskavier.HolderLVMain;
+import com.subirtupagina.diversioneskavier.R;
 import com.subirtupagina.diversioneskavier.modelo.Publicacion;
 
 public class AdapterLVMain extends ArrayAdapter<Publicacion> {

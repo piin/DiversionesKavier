@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-import com.proyectosimio.proyectosimio.R;
+import com.subirtupagina.diversioneskavier.R;
 import com.subirtupagina.diversioneskavier.adapters.AdapterLVMain;
 import com.subirtupagina.diversioneskavier.application.ProyectoSimioApplication;
 
