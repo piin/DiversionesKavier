@@ -6,32 +6,53 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.subirtupagina.diversioneskavier.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
+
 
 
 public class Secciones extends Activity {
 	private ImageLoader imageLoader;
-	private String urlImagen;
-	ProgressBar progressBar;
+	private String urlImagen,url;
+	private ImageView image;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// delete bar title
 		requestWindowFeature(Window.FEATURE_NO_TITLE);		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.secciones);		
-		//valor obtenido del primer activity
-		urlImagen = getIntent().getStringExtra("urlImagen");		
-		mostrarImagen();		
+		image = (ImageView)findViewById(R.id.imgSecciones);
+		
+		//valores obtenidos del primer activity
+		urlImagen = getIntent().getStringExtra("urlImagen");
+		url = getIntent().getStringExtra("url");
+		
+		mostrarImagen();
+		
+		image.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse(url));
+				Secciones.this.startActivity(intent);
+				
+			}
+		});
+		
 
 	}
 		
 	  private  void mostrarImagen() {
-			ImageView image = (ImageView) findViewById(R.id.imgSecciones);		
+					
 			// Get singletone instance of ImageLoader
 			imageLoader = ImageLoader.getInstance();
 			// Initialize ImageLoader with configuration. Do it once.
@@ -50,6 +71,7 @@ public class Secciones extends Activity {
 	      super.onConfigurationChanged(newConfig); 
 	  } 
 	  
+	  //tecla atras
 	  public boolean onKeyDown(int keyCode, KeyEvent event) {
 	   	  
 	    if (keyCode == KeyEvent.KEYCODE_BACK) {

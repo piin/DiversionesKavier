@@ -35,6 +35,7 @@ public class ConectorHttpXML {
 		// Variables para título y link de las publicaciones.
 		String headline = "";
 		String link = "";
+		String description = ""; //variable para descripion
 
 		// Variable que permitirá instanciar el XmlPullParser.
 		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -72,6 +73,11 @@ public class ConectorHttpXML {
 					// en un item recuperamos el link de la publicación.
 				} else if (xpp.getName().equalsIgnoreCase("link") && insideItem) {
 					link = xpp.nextText();
+					
+					// Si es la etiqueta description, y previamente habíamos entrado
+					// en un item recuperamos el link de la publicación.
+				}else if (xpp.getName().equalsIgnoreCase("description") && insideItem) {
+					description = xpp.nextText();
 				}
 
 				// Si es etiqueta de fin de item añadimos una nueva publicación
@@ -79,7 +85,7 @@ public class ConectorHttpXML {
 				// valor de insideItem a false.
 			} else if (event == XmlPullParser.END_TAG
 					&& xpp.getName().equalsIgnoreCase("item")) {
-				publicaciones.add(new Publicacion(headline, link));
+				publicaciones.add(new Publicacion(headline, link,description));
 				insideItem = false;
 			}
 

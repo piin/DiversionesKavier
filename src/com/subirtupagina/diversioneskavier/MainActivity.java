@@ -58,11 +58,14 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	@Override
 	public void onItemClick(AdapterView<?> adapter, View view, int position,
 			long id) {
-		// Recuperamos el link de la publicación seleccionada.
-		String link = lvAdapter.getItem(position).getLink();				
+		// Recuperamos el link y la imagen de la publicación seleccionada.
+		String link = lvAdapter.getItem(position).getLink();	
+		String descripcion = lvAdapter.getItem(position).getDescription();
+				
 		//Inicia segundo activity
 		Intent i = new Intent(this,Secciones.class);
 		i.putExtra("urlImagen", link);
+		i.putExtra("url", descripcion);
 		startActivity(i);
 		
 
