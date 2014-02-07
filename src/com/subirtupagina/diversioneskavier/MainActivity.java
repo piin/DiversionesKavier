@@ -35,7 +35,6 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		lvPublicaciones = (ListView) findViewById(R.id.lvPublicaciones);
 		lvPublicaciones.setAdapter(lvAdapter);
 		lvPublicaciones.setOnItemClickListener(this);
-		
        	//prueba de conexion a internet
 		pruebaInternet();
 	}
