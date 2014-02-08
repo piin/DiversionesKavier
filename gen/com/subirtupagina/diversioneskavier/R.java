@@ -72,69 +72,32 @@ public final class R {
         public static final int torso=0x7f020023;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f090000;
-        public static final int TableRow2=0x7f090016;
-        public static final int TableRow3=0x7f09001e;
-        public static final int TableRow4=0x7f090026;
-        public static final int arms=0x7f090030;
-        public static final int body=0x7f09002d;
-        public static final int btnDiviertete=0x7f090002;
-        public static final int button1=0x7f090004;
-        public static final int button2=0x7f090005;
-        public static final int button3=0x7f090006;
-        public static final int button4=0x7f090007;
-        public static final int button5=0x7f090008;
-        public static final int buttonA=0x7f09000f;
-        public static final int buttonB=0x7f090010;
-        public static final int buttonC=0x7f090011;
-        public static final int buttonD=0x7f090012;
-        public static final int buttonE=0x7f090013;
-        public static final int buttonF=0x7f090014;
-        public static final int buttonG=0x7f090015;
-        public static final int buttonH=0x7f090017;
-        public static final int buttonI=0x7f090018;
-        public static final int buttonJ=0x7f090019;
-        public static final int buttonK=0x7f09001a;
-        public static final int buttonL=0x7f09001b;
-        public static final int buttonM=0x7f09001c;
-        public static final int buttonN=0x7f09001d;
-        public static final int buttonO=0x7f09001f;
-        public static final int buttonP=0x7f090020;
-        public static final int buttonQ=0x7f090021;
-        public static final int buttonR=0x7f090022;
-        public static final int buttonS=0x7f090023;
-        public static final int buttonT=0x7f090024;
-        public static final int buttonU=0x7f090025;
-        public static final int buttonV=0x7f090027;
-        public static final int buttonW=0x7f090028;
-        public static final int buttonX=0x7f090029;
-        public static final int buttonY=0x7f09002a;
-        public static final int buttonZ=0x7f09002b;
-        public static final int category=0x7f090031;
-        public static final int head=0x7f09002e;
-        public static final int imageView1=0x7f09000c;
-        public static final int imgSecciones=0x7f090033;
-        public static final int imgTitulo=0x7f090003;
-        public static final int listView1=0x7f09000b;
-        public static final int lvPublicaciones=0x7f090001;
-        public static final int scrollView1=0x7f09000d;
-        public static final int tableRow1=0x7f09000e;
-        public static final int tablelayout=0x7f090009;
-        public static final int tablelayout2=0x7f09000a;
-        public static final int textView1=0x7f09002c;
-        public static final int torso=0x7f09002f;
-        public static final int tvTitulo=0x7f090032;
+        public static final int RelativeLayout1=0x7f0a0000;
+        public static final int action_settings=0x7f0a0006;
+        public static final int btnDiviertete=0x7f0a0002;
+        public static final int imgSecciones=0x7f0a0005;
+        public static final int imgTitulo=0x7f0a0003;
+        public static final int lvPublicaciones=0x7f0a0001;
+        public static final int tvTitulo=0x7f0a0004;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_main_options=0x7f030001;
-        public static final int activity_score=0x7f030002;
-        public static final int activity_select_language=0x7f030003;
-        public static final int activity_start=0x7f030004;
-        public static final int activity_start_next=0x7f030005;
-        public static final int lvpublicaciones_item=0x7f030006;
-        public static final int main_hangman=0x7f030007;
+        public static final int activity_hangman_menu=0x7f030000;
+        public static final int activity_intro=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_score=0x7f030003;
+        public static final int activity_select_language=0x7f030004;
+        public static final int activity_start=0x7f030005;
+        public static final int activity_start_next=0x7f030006;
+        public static final int lvpublicaciones_item=0x7f030007;
         public static final int secciones=0x7f030008;
+    }
+    public static final class menu {
+        public static final int hangman_menu=0x7f090000;
+        public static final int intro=0x7f090001;
+        public static final int score=0x7f090002;
+        public static final int select_language=0x7f090003;
+        public static final int start=0x7f090004;
+        public static final int start_next=0x7f090005;
     }
     public static final class raw {
         public static final int applause=0x7f040000;
@@ -174,11 +137,14 @@ public final class R {
         public static final int X=0x7f070021;
         public static final int Y=0x7f070022;
         public static final int Z=0x7f070023;
+        public static final int action_settings=0x7f070028;
         public static final int app_name=0x7f070000;
         public static final int description=0x7f070024;
         public static final int hello_world=0x7f070003;
         public static final int imgTituloDescription=0x7f070001;
         public static final int menu_settings=0x7f070004;
+        public static final int title_activity_hangman_menu=0x7f070029;
+        public static final int title_activity_intro=0x7f070027;
         public static final int title_activity_main_options=0x7f070007;
         public static final int title_activity_menu=0x7f070005;
         public static final int title_activity_principal=0x7f070006;

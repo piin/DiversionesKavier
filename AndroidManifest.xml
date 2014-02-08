@@ -7,10 +7,10 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name="com.subirtupagina.diversioneskavier.application.ProyectoSimioApplication"
@@ -27,13 +27,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.subirtupagina.diversioneskavier.Secciones"></activity>
-        <activity android:name="com.example.hangman.HangmanActivity"></activity>
-        <activity android:name="com.example.hangman.MainOptions"></activity><activity android:name="com.example.hangman.SelectLanguage"></activity><activity android:name="com.example.hangman.Score"></activity>
-        
-        <activity android:name="com.example.hangman.Start"></activity>
-        <activity android:name="com.example.hangman.StartNext"></activity>
-        
+        <activity android:name="com.subirtupagina.diversioneskavier.Secciones" >
+        </activity>
+        <activity
+            android:name="com.subirtupagina.diversioneskavier.Intro"
+            android:label="@string/title_activity_intro" >
+        </activity>
+        <activity
+            android:name="com.subirtupagina.diversioneskavier.HangmanMenu"
+            android:label="@string/title_activity_hangman_menu" >
+        </activity>
+        <activity
+            android:name="com.subirtupagina.diversioneskavier.Score"
+            android:label="@string/title_activity_score" >
+        </activity>
+        <activity
+            android:name="com.subirtupagina.diversioneskavier.SelectLanguage"
+            android:label="@string/title_activity_select_language" >
+        </activity>
+        <activity
+            android:name="com.subirtupagina.diversioneskavier.Start"
+            android:label="@string/title_activity_start" >
+        </activity>
+        <activity
+            android:name="com.subirtupagina.diversioneskavier.StartNext"
+            android:label="@string/title_activity_start_next" >
+        </activity>
     </application>
 
 </manifest>

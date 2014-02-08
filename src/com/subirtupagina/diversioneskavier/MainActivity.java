@@ -1,8 +1,5 @@
 package com.subirtupagina.diversioneskavier;
 
-
-
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -16,9 +13,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.hangman.*;
-/*
-import com.example.hangman.HangmanActivity;*/
 import com.subirtupagina.diversioneskavier.adapters.AdapterLVMain;
 import com.subirtupagina.diversioneskavier.application.ProyectoSimioApplication;
 
@@ -43,7 +37,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 	}
 	public void hangmanActivity(View view){
-		Intent intent = new Intent(this,HangmanActivity.class);
+		Intent intent = new Intent(this,Intro.class);
 		startActivity(intent);
 	}
 	private void pruebaInternet() {
