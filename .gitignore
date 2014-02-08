@@ -1,4 +1,5 @@
 # archivos compilados
 *.apk
 *.jar
-
+*.class
+*.rar

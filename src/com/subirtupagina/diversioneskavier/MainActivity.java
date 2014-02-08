@@ -1,11 +1,13 @@
 package com.subirtupagina.diversioneskavier;
 
+
+
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -14,8 +16,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
-
-import com.subirtupagina.diversioneskavier.R;
+import com.example.hangman.*;
+/*
+import com.example.hangman.HangmanActivity;*/
 import com.subirtupagina.diversioneskavier.adapters.AdapterLVMain;
 import com.subirtupagina.diversioneskavier.application.ProyectoSimioApplication;
 
@@ -37,8 +40,12 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		lvPublicaciones.setOnItemClickListener(this);
        	//prueba de conexion a internet
 		pruebaInternet();
-	}
 
+	}
+	public void hangmanActivity(View view){
+		Intent intent = new Intent(this,HangmanActivity.class);
+		startActivity(intent);
+	}
 	private void pruebaInternet() {
 	
 		ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);

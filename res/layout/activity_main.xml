@@ -1,14 +1,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@drawable/fondo_principal"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity"
-   	 >
+    tools:context=".HangmanActivity" >
+
+    <ListView
+        android:id="@+id/lvPublicaciones"
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_above="@+id/btnDiviertete"
+        android:layout_alignLeft="@+id/imgTitulo"
+        android:layout_below="@+id/imgTitulo"
+        android:background="@drawable/fondo_lv"
+        android:scrollbarStyle="outsideOverlay" >
+
+    </ListView>
 
     <ImageView
         android:id="@+id/imgTitulo"
@@ -19,15 +32,15 @@
         android:contentDescription="@string/imgTituloDescription"
         android:src="@drawable/kavier" />
 
-    <ListView
-        android:id="@+id/lvPublicaciones"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/imgTitulo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:background="@drawable/fondo_lv"
-    	android:scrollbarStyle="outsideOverlay"
-         />
+    <Button
+        android:id="@+id/btnDiviertete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lvPublicaciones"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lvPublicaciones"
+        android:text="@string/Boton"
+        android:onClick="hangmanActivity" />
 
 </RelativeLayout>

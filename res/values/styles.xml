@@ -16,5 +16,55 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    
+         <!--
+        TextView style for layout-sw320dp
+    -->
+    <style name="textViewstyle320">
+		<item name="android:textSize">25sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:fontFamily">Comic Sans MS</item>
+		<item name="android:textColor">@color/green</item>
+		<item name="android:background">@color/white</item>
+    </style>
+    <!--
+        TextView style
+    -->
+    <style name="textViewstyle">
+		<item name="android:textSize">37sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:fontFamily">Comic Sans MS</item>
+		<item name="android:textColor">@color/green</item>
+		<item name="android:background">@color/white</item>
+    </style>
+    <!--
+        Title style
+    -->
+    <style name="titleViewstyle">
+		<item name="android:textSize">60sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:fontFamily">Comic Sans MS</item>
+		<item name="android:textColor">@color/blue</item>
+		<item name="android:background">@color/black</item>
+    </style>
+    <!--
+        Title style for layout-sw320dp
+    -->
+    <style name="titleViewstyle320dp">
+		<item name="android:textSize">30sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:fontFamily">Comic Sans MS</item>
+		<item name="android:textColor">@color/blue</item>
+		<item name="android:background">@color/black</item>
+    </style>
+     <!--
+        button style
+    -->
+    <style name="buttonViewstyle">
+		<item name="android:layout_width">47dp</item>
+		<item name="android:layout_height">37dp</item>
+
+    </style>
 
 </resources>

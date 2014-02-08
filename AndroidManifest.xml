@@ -28,6 +28,12 @@
             </intent-filter>
         </activity>
         <activity android:name="com.subirtupagina.diversioneskavier.Secciones"></activity>
+        <activity android:name="com.example.hangman.HangmanActivity"></activity>
+        <activity android:name="com.example.hangman.MainOptions"></activity><activity android:name="com.example.hangman.SelectLanguage"></activity><activity android:name="com.example.hangman.Score"></activity>
+        
+        <activity android:name="com.example.hangman.Start"></activity>
+        <activity android:name="com.example.hangman.StartNext"></activity>
+        
     </application>
 
 </manifest>
