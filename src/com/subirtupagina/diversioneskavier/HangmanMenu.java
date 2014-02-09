@@ -6,9 +6,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -27,7 +25,6 @@ public class HangmanMenu extends Activity {
     	wr = MediaPlayer.create(HangmanMenu.this, R.raw.warning);
     	ex = MediaPlayer.create(HangmanMenu.this, R.raw.exit);
     	/**************/ 
-    	 setRequestedOrientation(ActivityInfo. SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
     	
     	// delete bar title
  		requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -75,18 +72,23 @@ public class HangmanMenu extends Activity {
     	while( ex.isPlaying() == true){
     		//do nothing
     	}
+    	HangmanMenu.this.finish();
     	System.exit(0);
     }
     public void start(View view){
     	bg.pause();
         bt.start();
-    	Intent intent = new Intent(HangmanMenu.this, SelectLanguage.class);
+        /**
+         * Descomentar para mostrar Opciones de lenguage
+         */
+    	//Intent intent = new Intent(HangmanMenu.this, SelectLanguage.class);
+        Intent intent = new Intent(HangmanMenu.this, Start.class);
     	startActivity(intent);
     	
     }
     public void score(View view){
     	bt.start();
-    	Intent intent = new Intent(this, Score.class);
+    	Intent intent = new Intent(HangmanMenu.this, Score.class);
     	startActivity(intent);
     }
     public void soundPressed(View view){

@@ -27,30 +27,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.subirtupagina.diversioneskavier.Secciones" >
+        <activity android:name="com.subirtupagina.diversioneskavier.Secciones">
         </activity>
         <activity
             android:name="com.subirtupagina.diversioneskavier.Intro"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_intro" >
         </activity>
         <activity
             android:name="com.subirtupagina.diversioneskavier.HangmanMenu"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_hangman_menu" >
         </activity>
         <activity
             android:name="com.subirtupagina.diversioneskavier.Score"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_score" >
         </activity>
         <activity
             android:name="com.subirtupagina.diversioneskavier.SelectLanguage"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_select_language" >
         </activity>
         <activity
             android:name="com.subirtupagina.diversioneskavier.Start"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_start" >
         </activity>
         <activity
             android:name="com.subirtupagina.diversioneskavier.StartNext"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_start_next" >
         </activity>
     </application>

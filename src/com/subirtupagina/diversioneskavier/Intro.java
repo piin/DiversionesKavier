@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
@@ -15,7 +13,7 @@ public class Intro extends Activity {
 
 		@Override
 	    protected void onCreate(Bundle savedInstanceState) {
-	    	setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+	    	//setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 	    	// delete bar title
 	    	requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    	         
@@ -28,9 +26,7 @@ public class Intro extends Activity {
 	            public void run() {
 	            	Intent intent = new Intent(Intro.this,HangmanMenu.class);
 	            	startActivity(intent);
-	            	Log.i("tag1", "error 1");
 	            	Intro.this.finish();
-	            	Log.i("tag1", "error 2");
 	            }
 	        }, 3000);
 	    }
