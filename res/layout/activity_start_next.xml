@@ -7,10 +7,11 @@
     android:screenOrientation="sensorLandscape"
     tools:context=".StartNext" >
 
-    <ScrollView
+   <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
         android:layout_height="140dp"
+        android:layout_marginLeft="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true" >
 
@@ -21,7 +22,7 @@
             <TableRow
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/buttonA"
@@ -33,7 +34,7 @@
 
                 <Button
                     android:id="@+id/buttonB"
-                   android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:onClick="dissapear"
@@ -83,7 +84,7 @@
             <TableRow
                 android:id="@+id/TableRow2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/buttonH"
@@ -145,7 +146,7 @@
             <TableRow
                 android:id="@+id/TableRow3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/buttonO"
@@ -207,7 +208,7 @@
             <TableRow
                 android:id="@+id/TableRow4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/buttonV"
@@ -260,8 +261,8 @@
         android:layout_above="@+id/scrollView1"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="17dp"
-        android:layout_marginLeft="305dp"
-        android:textIsSelectable="false" />
+        android:layout_marginLeft="302dp"
+        android:textIsSelectable="false"/>
 
     <ImageView
         android:id="@+id/body"
@@ -269,40 +270,36 @@
         android:layout_height="140dp"
         android:layout_marginLeft="183dp"
         android:layout_marginTop="40dp"
-        android:contentDescription="@string/description"
         android:src="@drawable/body"
-        android:visibility="invisible" />
-
+        android:visibility="invisible"
+        android:contentDescription="@string/description"/>
     <ImageView
         android:id="@+id/head"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginLeft="183dp"
         android:layout_marginTop="40dp"
-        android:contentDescription="@string/description"
         android:src="@drawable/head"
-        android:visibility="invisible" />
-
+        android:visibility="invisible"
+        android:contentDescription="@string/description"/>
     <ImageView
         android:id="@+id/torso"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginLeft="183dp"
         android:layout_marginTop="40dp"
-        android:contentDescription="@string/description"
         android:src="@drawable/torso"
-        android:visibility="invisible" />
-
+        android:visibility="invisible"
+        android:contentDescription="@string/description"/>
     <ImageView
         android:id="@+id/arms"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginLeft="183dp"
         android:layout_marginTop="40dp"
-        android:contentDescription="@string/description"
         android:src="@drawable/arms"
-        android:visibility="invisible" />
-
+        android:visibility="invisible"
+        android:contentDescription="@string/description"/>
     <TextView
         android:id="@+id/category"
         style="@style/titleViewstyle"

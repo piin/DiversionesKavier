@@ -42,7 +42,7 @@
         Title style
     -->
     <style name="titleViewstyle">
-		<item name="android:textSize">60sp</item>
+		<item name="android:textSize">35sp</item>
 		<item name="android:textStyle">bold</item>
 		<item name="android:fontFamily">Comic Sans MS</item>
 		<item name="android:textColor">@color/blue</item>
