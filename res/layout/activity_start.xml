@@ -268,8 +268,8 @@
         android:id="@+id/body"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginLeft="183dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/body"
         android:visibility="invisible"
         android:contentDescription="@string/description"/>
@@ -277,8 +277,8 @@
         android:id="@+id/head"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginLeft="183dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/head"
         android:visibility="invisible"
         android:contentDescription="@string/description"/>
@@ -286,8 +286,8 @@
         android:id="@+id/torso"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginLeft="183dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/torso"
         android:visibility="invisible"
         android:contentDescription="@string/description"/>
@@ -295,8 +295,8 @@
         android:id="@+id/arms"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginLeft="183dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/arms"
         android:visibility="invisible"
         android:contentDescription="@string/description"/>
