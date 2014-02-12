@@ -40,7 +40,9 @@
         android:layout_alignLeft="@+id/lvPublicaciones"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/lvPublicaciones"
+        android:onClick="hangmanActivity"
         android:text="@string/Boton"
-        android:onClick="hangmanActivity" />
+        android:textColorHint="@color/black"
+        android:textSize="17sp" />
 
 </RelativeLayout>
