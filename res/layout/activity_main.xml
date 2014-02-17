@@ -24,12 +24,15 @@
     <ListView
         android:id="@+id/lvPublicaciones"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/btnDiviertete"
         android:layout_alignLeft="@+id/imgTitulo"
         android:layout_below="@+id/imgTitulo"
         android:background="@drawable/fondo_lv"
-        android:scrollbarStyle="outsideOverlay" 
+        android:scrollbarStyle="outsideOverlay"
+        android:dividerHeight="0dp" 
+        android:divider="@color/blue"
+        
         >
 
     </ListView>

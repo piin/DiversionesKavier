@@ -15,6 +15,7 @@ public final class R {
         public static final int ListViewBackground=0x7f050001;
         public static final int black=0x7f050005;
         public static final int blue=0x7f050008;
+        public static final int blue_listView=0x7f050009;
         public static final int gray=0x7f050007;
         public static final int green=0x7f050006;
         public static final int red=0x7f050003;
