@@ -5,5 +5,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="title_image">115dp</dimen>
     <dimen name="margin_standard">10dp</dimen>
+    <dimen name="item">50dp</dimen>
 
 </resources>

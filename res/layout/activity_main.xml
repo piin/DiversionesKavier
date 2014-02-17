@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/fondo_principal"
-    android:gravity="bottom"
+    android:gravity="top"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -16,39 +16,39 @@
         android:id="@+id/imgTitulo"
         android:layout_width="fill_parent"
         android:layout_height="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:contentDescription="@string/imgTituloDescription"
-        android:scaleType="fitXY"
         android:paddingBottom="10dp"
+        android:scaleType="fitXY"
         android:src="@drawable/kavier" />
-
-    <ListView
-        android:id="@+id/lvPublicaciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnDiviertete"
-        android:layout_alignLeft="@+id/imgTitulo"
-        android:layout_below="@+id/imgTitulo"
-        android:background="@drawable/fondo_lv"
-        android:scrollbarStyle="outsideOverlay"
-        android:dividerHeight="0dp" 
-        android:divider="@color/blue"
-        
-        >
-
-    </ListView>
 
     <Button
         android:id="@+id/btnDiviertete"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lvPublicaciones"
+        android:layout_alignLeft="@+id/imgTitulo"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/lvPublicaciones"
         android:onClick="hangmanActivity"
+        android:paddingTop="15dp"
         android:text="@string/Boton"
         android:textColorHint="@color/black"
-        android:textSize="17sp" 
-        android:paddingTop="15dp"/>
+        android:textSize="17sp" />
+
+    <ListView
+        android:id="@+id/lvPublicaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="305dp"
+        android:layout_above="@+id/btnDiviertete"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgTitulo"
+        android:background="@drawable/fondo_lv"
+        android:divider="@color/blue_listView"
+        android:dividerHeight="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+
+    </ListView>
 
 </RelativeLayout>

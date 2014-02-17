@@ -27,6 +27,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);	
 		setContentView(R.layout.activity_main);
+		
 	
 		lvAdapter = new AdapterLVMain(this);
 		lvPublicaciones = (ListView) findViewById(R.id.lvPublicaciones);

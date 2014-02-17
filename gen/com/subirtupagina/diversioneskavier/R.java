@@ -31,6 +31,7 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f060000;
         public static final int activity_vertical_margin=0x7f060001;
+        public static final int item=0x7f060004;
         public static final int margin_standard=0x7f060003;
         public static final int title_image=0x7f060002;
     }
@@ -80,7 +81,7 @@ public final class R {
         public static final int action_settings=0x7f0a0034;
         public static final int arms=0x7f0a0030;
         public static final int body=0x7f0a002d;
-        public static final int btnDiviertete=0x7f0a0008;
+        public static final int btnDiviertete=0x7f0a0007;
         public static final int button1=0x7f0a0000;
         public static final int button2=0x7f0a0001;
         public static final int button3=0x7f0a0002;
@@ -118,7 +119,7 @@ public final class R {
         public static final int imgSecciones=0x7f0a0033;
         public static final int imgTitulo=0x7f0a0006;
         public static final int listView1=0x7f0a000b;
-        public static final int lvPublicaciones=0x7f0a0007;
+        public static final int lvPublicaciones=0x7f0a0008;
         public static final int scrollView1=0x7f0a000d;
         public static final int tableRow1=0x7f0a000e;
         public static final int tablelayout=0x7f0a0009;
