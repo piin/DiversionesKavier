@@ -25,7 +25,7 @@
 
     <Button
         android:id="@+id/btnDiviertete"
-        style="?android:attr/buttonStyleSmall"
+        
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imgTitulo"
@@ -35,7 +35,10 @@
         android:paddingTop="15dp"
         android:text="@string/Boton"
         android:textColorHint="@color/black"
-        android:textSize="17sp" />
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@drawable/fondo_boton"
+        />
 
     <ListView
         android:id="@+id/lvPublicaciones"

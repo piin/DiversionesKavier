@@ -14,7 +14,7 @@
   android:background="@drawable/fondo_item"
   android:padding="7dp"
   android:textAlignment="center"
-  android:textAppearance="?android:attr/textAppearanceLarge"
-  android:textStyle="bold" />
+  android:textStyle="bold"
+  android:textSize="40sp" />
 
 </RelativeLayout>
